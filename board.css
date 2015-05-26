@@ -1,0 +1,67 @@
+body {
+  background-color: #e5c499;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  background-color: lightsalmon;
+  text-shadow: 1px 1px 1px black;
+}
+
+#DrawingBoard, #DrawingBoardNote {
+  background-color: white;
+}
+
+.ColorChoice {
+  display: inline-table;
+  border: 3px ridge white;
+  width: 40px;
+  height: 40px;
+  margin: 5px 1px 0px 1px;
+  padding: 0;
+  list-style: none;
+}
+
+#ColorPalette {
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  max-width: 640px;
+  text-align: center;
+  margin: auto;
+}
+
+@media (min-width: 320px) and (max-width:720px){
+  h1 {
+    font-size: 1rem;
+  }
+  
+  #DrawingBoard {
+    display:none;
+  }
+  
+  #DrawingBoardNote{
+    display: block;
+  }
+  
+  .ColorChoice {
+    width: 20px;
+    height: 20px;
+  }
+  
+  #content {
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 721px) 
+{
+  #DrawingBoardNote{
+    display: none;
+  }
+}
+
+

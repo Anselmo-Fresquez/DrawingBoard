@@ -1,0 +1,29 @@
+.drop-shadow  {
+	-moz-box-shadow    : 3px 3px 4px #444;
+	-webkit-box-shadow : 3px 3px 4px #444;
+	box-shadow         : 3px 3px 4px #444;
+	-ms-filter         : "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#444444')";
+	filter             : progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#444444');
+}
+
+.rounded-corners {
+  -moz-border-radius    : 3px;
+  -webkit-border-radius : 3px;
+  -khtml-border-radius  : 3px;
+  border-radius         : 3px;
+}
+
+.pointer-finger {
+  cursor: pointer;
+}
+
+.cursor-pen {
+  cursor: url("pencil.png") 0 15, default;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
