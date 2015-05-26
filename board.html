@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="HTML5 Drawing Board">
   <meta name="author" content="Anselmo Fresquez III">
   
@@ -17,21 +18,23 @@
 </head>
 
 <body>
-  <div id="content">
-    <h1 class="drop-shadow rounded-corners">紙 Drawing Board Demo 笑顔</h1>
-    <canvas id="DrawingBoard" 
-            class="drop-shadow rounded-corners noselect cursor-pen"
-            width="640" 
-            height="480">
-    </canvas>
-    <canvas id="DrawingBoardNote" 
-            class="drop-shadow rounded-corners noselect cursor-pen"
-            width="320" 
-            height="320">
-    </canvas>
-
-    <ul id="ColorPalette">
-    </ul>
+  <h1 class="drop-shadow rounded-corners">紙 Drawing Board Demo 笑顔</h1>
+  <ul id="ColorPalette" class="drop-shadow rounded-corners">
+    <li>Palette</li>
+  </ul>
+  <div id="DrawingArea">
+    <center>
+        <canvas id="DrawingBoard" 
+                class="drop-shadow rounded-corners noselect cursor-pen"
+                width="640" 
+                height="480">
+        </canvas>
+        <canvas id="DrawingBoardNote" 
+                class="drop-shadow rounded-corners noselect cursor-pen"
+                width="250" 
+                height="250">
+        </canvas>
+      </center>
   </div>
   
   <script src="http://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
